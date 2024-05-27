@@ -1,11 +1,15 @@
-# Exercicio
+# Exercício
+
+Atividade realizada em aula
+
+* Criar um projeto novo usando a CLI do Angular;
+* Alterar as configurações do projeto para trabalhar com módulos;
+* Criar um UserModule usando a CLI do Angular;
+* Criar um componente UserComponent que vai pertencer ao módulo UserModule. O componente apresenta uma lista de pessoa e biografia;
+* Usar CSS para estilizar o código
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
-
-1 - Criar um projeto novo usando a CLI do Angular `ng new nome-do-projeto`
-2 - Alterar as configurações do projeto para trabalhar com módulos
-3 - Criar um UserModule usando a CLI do Angular
-4 -  Criar um componente UserComponent que vai pertencer ao módulo UserModule. O componente apresenta uma lista de pessoa e biografia. Usar CSS para estilizar o código
 
 
 ## Development server
