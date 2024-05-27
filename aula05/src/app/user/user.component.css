@@ -1,0 +1,22 @@
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 90vw;
+}
+
+.person-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-bottom: 1px solid gray;
+}
+
+.person-name {
+    font-weight: bold;
+}
+
+.person-bio {
+    text-align: justify;
+}
