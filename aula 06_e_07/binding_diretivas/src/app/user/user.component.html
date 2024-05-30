@@ -1,0 +1,18 @@
+<section>
+    <h2>Binding</h2>
+
+    <div class="binding">
+        <!-- Atributte binding -->
+        <button type="button" [disabled]="true" (click)="testar" [attr.aria-label]="actionName">{{actionName}}</button>
+
+        <!-- To way binding: pode receber e passar/inputando dados -->
+        <input type="text" placeholder="name" [(value)]="name" placeholder="nome">
+        <!-- [(propr)] -> assim estamos recebendo e passando ela direto -->
+
+        <!-- ngModel necessário para ao mesmo tempo que receber já mostrar o valor (necessário FormsModule) -->
+        <input type="text" placeholder="sobrenome" [(ngModel)]="sobrenome" placeholder="sobrenome">
+
+        <p class="result">Sobrenome: {{ sobrenome }}</p>
+    </div>
+
+</section>

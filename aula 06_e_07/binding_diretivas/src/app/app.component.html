@@ -1,0 +1,81 @@
+<div class="app-container">
+    <h1>{{title}}</h1>
+
+    <app-user></app-user>
+
+    <section>
+        <h2>Diretivas</h2>
+
+        <div class="attribute__directives">
+            <h3>Diretivas de Atributos → mudam o comportamento de um elemento </h3>
+
+            <!-- ngClass -->
+            <div [ngClass]="isSpecial ? 'special' : ''">
+                <p>ngClass → adiciona e remove classes do css</p>
+            </div>
+
+
+            <!-- ngStyle -->
+            <div [ngStyle]="receptStyle ? { color: 'blue', 'font-size': '24px' } : {}">
+                <p>ngStyle → adiciona e remove estilos do HTML</p>
+            </div>
+
+        </div>
+
+
+        <div>
+            <h3>Diretivas Estruturais → importantes para apresentar e esconder elementos na tela, geralmente utilizando condições </h3>
+
+            <p class="type" appHighlight>Condicional</p>
+            <div *ngIf="showText">
+                <p>Testando o ngIf</p>
+            </div>
+
+
+            @if (showText) {
+                <div>
+                    <p>Testando Control Flow IF </p>
+                </div>
+            }
+
+            <p class="type" appHighlight>Repetição</p>
+            <ul>
+                <p class="sub-type">ngFor</p>
+                <li *ngFor="let product of products">{{ product }}</li>
+            </ul>
+
+            <ul>
+                <p class="sub-type">Control Flow - For</p>
+                @for (product of products; track $index){
+                    <!-- track => garante que se tem alteração não renderiza tudo novamente, apenas inclui o novo item -->
+                    <li>{{ product }}</li>
+                }
+            </ul>
+
+            <div [ngSwitch]="statusProduct">
+                <p class="sub-type">ngSwitch e ngSwitchCase</p>
+                <p *ngSwitchCase="'esgotado'">Produto esgotado</p>
+                <p *ngSwitchCase="'disponivel'">Produto disponivel</p>
+                <p *ngSwitchDefault>Default</p>
+            </div>
+
+            <p class="sub-type">Control Flow - switch</p>
+            @switch (case) {
+                @case('caso 1') {
+                    <p>Caso 1</p>
+                }
+                @case('caso 2') {
+                    <p>Caso 2</p>
+                }
+                @default {
+                    <p>Default</p>
+                }
+            }
+
+        </div>
+    </section>
+</div>
+
+<!-- Property binding: alterar propriedades dos atributos HTML -->
+<!-- Atributte binding: atributos que podemos colocar  -->
+<!-- To way binding: pode receber e passar/inputando dados => [(prop)] -->

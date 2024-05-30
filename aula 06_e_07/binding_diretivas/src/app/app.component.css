@@ -1,0 +1,49 @@
+
+h1 {
+    text-align: center;
+    color: darkslategrey;
+    padding: 2rem;
+}
+
+.title {
+    font-weight: bold;
+    color: darkolivegreen;
+}
+
+.attribute__directives {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.special p {
+    background-color: cornflowerblue;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+}
+
+img {
+    width: 20%;
+    max-width: 300px;
+}
+
+p {
+    padding: 4px;
+}
+
+.type {
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.sub-type {
+    text-decoration: underline;
+    padding: 1rem;
+}
+
+li {
+    padding: 4px;
+}
